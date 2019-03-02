@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Our Gallery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="{%static 'scripts/jquery.js' %}"></script>
+    <script src="{%static 'scripts/main.js' %}"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{%static 'css/content.css' %}">
+    <link rel="stylesheet" href="{%static 'css/index.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images2/text960.png' %}"/>
+
+</head>
+<body>
+    <div class="preview" onclick="closePreview()">
+        <div>
+            <img src="" alt="" id="preview_content" />
+        </div>
+    </div>
+    <div id="container" class="animated fadeIn">
+    
+    <h1 class="headline">
+        <a href="{% url 'start-home' %}">
+            <i class="fas fa-chevron-left"></i>
+            
+        </a>
+        GALLERY
+    </h1>
+
+
+
+<div style="display: none">
+    <h3 class="headlineTwo">Filter</h3>
+    <div class="sliderContainer" width="100%">
+        <table class="mainTable">
+                <tr>
+                    
+                    <!-- Start - First Slider-->
+                    <td>
+                            <div class="firstSlider">
+                                <section title=".slideOne">
+                                        <div class="slideOne slider" id="sliderOne">  
+                                            <input sliderId="1" type="checkbox" value="None" id="slideOne" name="check" checked/>
+                                            <label for="slideOne"></label>
+                                        </div>
+                                </section>
+                            </div>
+                    </td>
+                    
+                    <td>Elias</td>
+                    <td><div class="space"></div></td>
+                    <!-- End - First Slider -->
+                    
+                    <!-- Start - Second Slider-->
+                    <td>
+                        <div class="secondSlider">
+                                <section title=".slideTwo">
+                                        <!-- .slideOne -->
+                                        <div class="slideTwo slider">  
+                                            <input sliderId="2" type="checkbox" value="None" id="slideTwo" name="check" checked/>
+                                            <label for="slideTwo"></label>
+                                        </div>
+                                        <!-- end .slideOne -->
+                                </section>
+                        </div>
+                    </td>
+
+                    <td>Martin</td>
+                    <td><div class="space"></div></td>
+                    <!-- End - Second Slider -->        
+                    
+                    <!-- Start - Third Slider-->
+                    <td>
+                        <div class="thirdSlider">
+                                <section title=".slideThree" >
+                                        <div class="slideThree slider">  
+                                            <input sliderId="3" type="checkbox" value="None" id="slideThree" name="check" checked/>
+                                            <label for="slideThree"></label>
+                                        </div>
+                                </section>
+                        </div> 
+                    </td>
+
+                    <td>Alex</td>
+                    <td><div class="space"></div></td>
+                    <!-- End - Third Slider-->
+
+                    <!-- Start - Fourth Slider-->
+                    <td>
+                        <div class="fourthSlider">
+                                <section title=".slideFour" >
+                                        <div class="slideFour">  
+                                            <input type="checkbox" sliderId="4" value="None" id="slideFour" name="check" checked/>
+                                            <label for="slideFour"></label>
+                                        </div>
+                                </section>
+                        </div> 
+                    </td>
+
+                    <td>All</td>
+                    <!-- End - Fourth Slider-->
+                </tr>
+                </tr>
+                
+        </table>    
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+</div>
+    <div class="content">
+        <div class="imagesWrapper">
+            {%for item, name in data%}
+                <div class='img_container show'>
+                    <div class="imageWrapper">
+                            <img onclick='preview(this.src)' id='id_{{forloop.counter0}}' class='images animated zoomIn {{name}}' src="{%static 'images/'%}{{item}}" >
+                    </div>
+                    
+                    <p class="animated zoomIn">by {{name}}</p>
+                </div>
+                
+            {%endfor%}
+        </div>
+            
+    </div>
+    </div>
+</body>
+</html>

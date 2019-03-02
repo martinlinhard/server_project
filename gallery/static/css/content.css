@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+.content{
+    position: relative;
+}
+
+.space2{
+    width: 4%;
+    display: inline-block;
+}
+
+.img_container{
+    width: 80%;
+    height: auto;
+    padding: 6px 2% 0px 2%;
+    overflow: hidden;
+    margin: auto;
+    display: none;
+} 
+
+.img_container .imageWrapper{
+    width: 80%;
+    height: 80%;
+    padding: 6px 2% 0px 2%;
+    overflow: hidden;
+    margin: auto;
+    transition: all 500ms;
+    margin-top: 10%;
+    display: block;
+} 
+
+.show{
+    display: block;
+    transition: all 500ms;
+}
+
+.content .imagesWrapper p{
+    position: relative;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-bottom: 80px;
+    top: 20px;  
+}
+
+.images{
+    border: 2px solid white;
+    width: 100%;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 2px 5px 2px black;
+    margin-bottom: 3%;
+    border-radius: 3px;
+}
+
+.img_container .imageWrapper:hover{
+    transform: scale(1.05) rotate(2deg) ;
+}
+
+
+.imagesWrapper{
+    margin: auto;
+    width: 80%;
+    height: 30px;
+}
+
+/*Image Preview Div(s)
+*/
+.background{
+    position: absolute;
+    z-index: 1;
+    background-color: #5a6262;
+    color: white;
+    border-radius: 50px;
+    height: 550px;
+}
+
+.loadedPicture{
+    max-height: 440px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    padding: 20px;
+    border-radius:40px;
+}
+
+.preview{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+    background: rgba(0,0,0, .9);
+    text-align: center;
+    margin: 0 auto;
+    display: none;
+}
+
+.preview div{
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.preview div img{
+    width: 70%;
+    height: auto;
+    max-height: 900px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px white;
+}

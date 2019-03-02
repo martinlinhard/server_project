@@ -1,0 +1,1152 @@
+/* normalize-scss 3.0.0-alpha.2+normalize.3.0.0 | MIT/GPLv2 License | bit.ly/normalize-scss */
+/* Base
+   ========================================================================== */
+/**
+ * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
+ * and $rhythm-unit variables. Also, correct text resizing oddly in IE 6/7 when
+ * body `font-size` is set using `em` units.
+ */
+ @import url("https://fonts.googleapis.com/css?family=Raleway");
+ /* line 106, ../../../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+ html {
+   font-size: 100%;
+   line-height: 1.5em;
+ }
+ 
+ /**
+  * 1. Set default font family to sans-serif.
+  * 2. Prevent iOS text size adjust after orientation change, without disabling
+  *    user zoom.
+  */
+ /* line 101, ../sass/variable/_normalize.scss */
+ html {
+   font-family: sans-serif;
+   /* 1 */
+   -ms-text-size-adjust: 100%;
+   /* 2 */
+   -webkit-text-size-adjust: 100%;
+   /* 2 */
+ }
+ 
+ /**
+  * Remove default margin.
+  */
+ /* line 113, ../sass/variable/_normalize.scss */
+ body {
+   margin: 0;
+ }
+ 
+ /* HTML5 display definitions
+    ========================================================================== */
+ /**
+  * Correct `block` display not defined in IE 8/9. Correct `block` display
+  * not defined on `summary` and `details` in IE and Firefox and on `main` in IE.
+  */
+ /* line 125, ../sass/variable/_normalize.scss */
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ main,
+ nav,
+ section,
+ summary {
+   display: block;
+ }
+ 
+ /**
+  * 1. Correct `inline-block` display not defined in IE 8/9.
+  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+  */
+ /* line 145, ../sass/variable/_normalize.scss */
+ audio,
+ canvas,
+ progress,
+ video {
+   display: inline-block;
+   /* 1 */
+   *display: inline;
+   *zoom: 1;
+   vertical-align: baseline;
+   /* 2 */
+ }
+ 
+ /**
+  * Prevent modern browsers from displaying `audio` without controls.
+  * Remove excess height in iOS 5 devices.
+  */
+ /* line 164, ../sass/variable/_normalize.scss */
+ audio:not([controls]) {
+   display: none;
+   height: 0;
+ }
+ 
+ /**
+  * Address `[hidden]` styling not present in IE 8/9/10.
+  */
+ /* line 174, ../sass/variable/_normalize.scss */
+ [hidden] {
+   display: none;
+ }
+ 
+ /**
+  * Hide the `template` element in IE, Safari, and Firefox < 22.
+  */
+ /* line 183, ../sass/variable/_normalize.scss */
+ template {
+   display: none;
+ }
+ 
+ /* Links
+    ========================================================================== */
+ /**
+  * Remove the gray background color from active links in IE 10.
+  */
+ /* line 195, ../sass/variable/_normalize.scss */
+ a {
+   background: transparent;
+ }
+ 
+ /**
+  * Improve readability when focused and also mouse hovered in all browsers.
+  */
+ /* line 204, ../sass/variable/_normalize.scss */
+ a:active,
+ a:hover {
+   outline: 0;
+ }
+ 
+ /* Text-level semantics
+    ========================================================================== */
+ /**
+  * Address styling not present in IE, Safari 5, and Chrome.
+  */
+ /* line 216, ../sass/variable/_normalize.scss */
+ abbr[title] {
+   border-bottom: 1px dotted;
+ }
+ 
+ /**
+  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+  */
+ /* line 224, ../sass/variable/_normalize.scss */
+ b,
+ strong {
+   font-weight: bold;
+ }
+ 
+ /**
+  * Set 1 unit of vertical rhythm on the top and bottom margin.
+  */
+ /* line 234, ../sass/variable/_normalize.scss */
+ blockquote {
+   margin: 1.5em 40px;
+ }
+ 
+ /**
+  * Address odd `em`-unit font size rendering in all browsers.
+  */
+ /* line 243, ../sass/variable/_normalize.scss */
+ code,
+ kbd,
+ pre,
+ samp {
+   font-family: monospace, serif;
+   font-size: 1em;
+ }
+ 
+ /**
+  * Address styling not present in Safari 5 and Chrome.
+  */
+ /* line 258, ../sass/variable/_normalize.scss */
+ dfn {
+   font-style: italic;
+ }
+ 
+ /**
+  * Address variable `h1` font-size and margin within `section` and `article`
+  * contexts in Firefox 4+, Safari 5, and Chrome.
+  */
+ /* line 267, ../sass/variable/_normalize.scss */
+ h1 {
+   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
+   font-size: 2em;
+   line-height: 1.5em;
+   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
+   margin-top: 0.75em;
+   margin-bottom: 0.75em;
+ }
+ 
+ /* line 282, ../sass/variable/_normalize.scss */
+ h2 {
+   font-size: 1.5em;
+   line-height: 2em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+ }
+ 
+ /* line 288, ../sass/variable/_normalize.scss */
+ h3 {
+   font-size: 1.17em;
+   line-height: 1.28205em;
+   margin-top: 1.28205em;
+   margin-bottom: 1.28205em;
+ }
+ 
+ /* line 294, ../sass/variable/_normalize.scss */
+ h4 {
+   font-size: 1em;
+   line-height: 1.5em;
+   margin-top: 1.5em;
+   margin-bottom: 1.5em;
+ }
+ 
+ /* line 300, ../sass/variable/_normalize.scss */
+ h5 {
+   font-size: 0.83em;
+   line-height: 1.80723em;
+   margin-top: 1.80723em;
+   margin-bottom: 1.80723em;
+ }
+ 
+ /* line 306, ../sass/variable/_normalize.scss */
+ h6 {
+   font-size: 0.67em;
+   line-height: 2.23881em;
+   margin-top: 2.23881em;
+   margin-bottom: 2.23881em;
+ }
+ 
+ /**
+  * Address styling not present in IE 8/9.
+  */
+ /* line 318, ../sass/variable/_normalize.scss */
+ mark {
+   background: #ff0;
+   color: #000;
+ }
+ 
+ /**
+  * Set 1 unit of vertical rhythm on the top and bottom margin.
+  */
+ /* line 329, ../sass/variable/_normalize.scss */
+ p,
+ pre {
+   margin: 1.5em 0;
+ }
+ 
+ /**
+  * Contain overflow in all browsers.
+  */
+ /* line 339, ../sass/variable/_normalize.scss */
+ pre {
+   overflow: auto;
+ }
+ 
+ /**
+  * Address inconsistent and variable font size in all browsers.
+  */
+ /* line 347, ../sass/variable/_normalize.scss */
+ small {
+   font-size: 80%;
+ }
+ 
+ /**
+  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+  */
+ /* line 355, ../sass/variable/_normalize.scss */
+ sub,
+ sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+ }
+ 
+ /* line 363, ../sass/variable/_normalize.scss */
+ sup {
+   top: -0.5em;
+ }
+ 
+ /* line 367, ../sass/variable/_normalize.scss */
+ sub {
+   bottom: -0.25em;
+ }
+ 
+ /* Lists
+    ========================================================================== */
+ /**
+  * Address margins set differently in IE 6/7.
+  */
+ /* line 379, ../sass/variable/_normalize.scss */
+ dl,
+ menu,
+ ol,
+ ul {
+   margin: 1.5em 0;
+ }
+ 
+ /* line 396, ../sass/variable/_normalize.scss */
+ dd {
+   margin: 0 0 0 40px;
+ }
+ 
+ /**
+  * Address paddings set differently in IE 6/7.
+  */
+ /* line 404, ../sass/variable/_normalize.scss */
+ menu,
+ ol,
+ ul {
+   padding: 0 0 0 40px;
+ }
+ 
+ /**
+  * Correct list images handled incorrectly in IE 7.
+  */
+ /* line 416, ../sass/variable/_normalize.scss */
+ nav ul,
+ nav ol {
+   list-style: none;
+   list-style-image: none;
+ }
+ 
+ /* Embedded content
+    ========================================================================== */
+ /**
+  * Remove border when inside `a` element in IE 8/9/10.
+  */
+ /* line 431, ../sass/variable/_normalize.scss */
+ img {
+   border: 0;
+   /* Improve image quality when scaled in IE 7. */
+   -ms-interpolation-mode: bicubic;
+ }
+ 
+ /**
+  * Correct overflow displayed in IE.
+  */
+ /* line 444, ../sass/variable/_normalize.scss */
+ svg:not(:root) {
+   overflow: hidden;
+ }
+ 
+ /* Grouping content
+    ========================================================================== */
+ /**
+  * Address margin not present in IE 8/9 and Safari 5.
+  */
+ /* line 456, ../sass/variable/_normalize.scss */
+ figure {
+   margin: 1.5em 40px;
+ }
+ 
+ /**
+  * Address differences between Firefox and other browsers.
+  */
+ /* line 465, ../sass/variable/_normalize.scss */
+ hr {
+   -moz-box-sizing: content-box;
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+   height: 0;
+ }
+ 
+ /* Forms
+    ========================================================================== */
+ /**
+  * Known limitation: by default, Chrome and Safari on OS X allow very limited
+  * styling of `select`, unless a `border` property is set.
+  */
+ /**
+  * Correct margin displayed oddly in IE 6/7.
+  */
+ /* line 483, ../sass/variable/_normalize.scss */
+ form {
+   margin: 0;
+ }
+ 
+ /**
+  * 1. Correct color not being inherited.
+  *    Known issue: affects color of disabled elements.
+  * 2. Correct font properties not being inherited.
+  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+  * 4. Address `font-family` inconsistency between `textarea` and other form in IE 7
+  * 5. Improve appearance and consistency with IE 6/7.
+  */
+ /* line 497, ../sass/variable/_normalize.scss */
+ button,
+ input,
+ optgroup,
+ select,
+ textarea {
+   color: inherit;
+   /* 1 */
+   font: inherit;
+   /* 2 */
+   margin: 0;
+   /* 3 */
+   *font-family: sans-serif;
+   /* 4 */
+   *vertical-align: middle;
+   /* 5 */
+ }
+ 
+ /**
+  * Address `overflow` set to `hidden` in IE.
+  */
+ /* line 515, ../sass/variable/_normalize.scss */
+ button {
+   overflow: visible;
+ }
+ 
+ /**
+  * Address inconsistent `text-transform` inheritance for `button` and `select`.
+  * All other form control elements do not inherit `text-transform` values.
+  * Correct `button` style inheritance in Firefox, IE, and Opera.
+  * Correct `select` style inheritance in Firefox.
+  */
+ /* line 526, ../sass/variable/_normalize.scss */
+ button,
+ select {
+   text-transform: none;
+ }
+ 
+ /**
+  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+  *    and `video` controls.
+  * 2. Correct inability to style clickable `input` types in iOS.
+  * 3. Improve usability and consistency of cursor style between image-type
+  *    `input` and others.
+  * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+  *    Known issue: inner spacing remains in IE 6.
+  */
+ /* line 541, ../sass/variable/_normalize.scss */
+ button,
+ html input[type="button"],
+ input[type="reset"],
+ input[type="submit"] {
+   -webkit-appearance: button;
+   /* 2 */
+   cursor: pointer;
+   /* 3 */
+   *overflow: visible;
+   /* 4 */
+ }
+ 
+ /**
+  * Re-set default cursor for disabled elements.
+  */
+ /* line 556, ../sass/variable/_normalize.scss */
+ button[disabled],
+ html input[disabled] {
+   cursor: default;
+ }
+ 
+ /**
+  * Remove inner padding and border in Firefox 4+.
+  */
+ /* line 565, ../sass/variable/_normalize.scss */
+ button::-moz-focus-inner,
+ input::-moz-focus-inner {
+   border: 0;
+   padding: 0;
+ }
+ 
+ /**
+  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+  * the UA stylesheet.
+  */
+ /* line 576, ../sass/variable/_normalize.scss */
+ input {
+   line-height: normal;
+ }
+ 
+ /**
+  * It's recommended that you don't attempt to style these elements.
+  * Firefox's implementation doesn't respect box-sizing, padding, or width.
+  *
+  * 1. Address box sizing set to `content-box` in IE 8/9/10.
+  * 2. Remove excess padding in IE 8/9/10.
+  * 3. Remove excess padding in IE 7.
+  *    Known issue: excess padding remains in IE 6.
+  */
+ /* line 591, ../sass/variable/_normalize.scss */
+ input[type="checkbox"],
+ input[type="radio"] {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   /* 1 */
+   padding: 0;
+   /* 2 */
+   *height: 13px;
+   /* 3 */
+   *width: 13px;
+   /* 3 */
+ }
+ 
+ /**
+  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+  * `font-size` values of the `input`, it causes the cursor style of the
+  * decrement button to change from `default` to `text`.
+  */
+ /* line 608, ../sass/variable/_normalize.scss */
+ input[type="number"]::-webkit-inner-spin-button,
+ input[type="number"]::-webkit-outer-spin-button {
+   height: auto;
+ }
+ 
+ /**
+  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+  *    (include `-moz` to future-proof).
+  */
+ /* line 619, ../sass/variable/_normalize.scss */
+ input[type="search"] {
+   -webkit-appearance: textfield;
+   /* 1 */
+   -moz-box-sizing: content-box;
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+   /* 2 */
+   /**
+    * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+    * Safari (but not Chrome) clips the cancel button when the search input has
+    * padding (and `textfield` appearance).
+    */
+ }
+ /* line 629, ../sass/variable/_normalize.scss */
+ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+   -webkit-appearance: none;
+ }
+ 
+ /**
+  * Define consistent border, margin, and padding.
+  */
+ /* line 639, ../sass/variable/_normalize.scss */
+ fieldset {
+   margin: 0 2px;
+   /* Apply borders and padding that keep the vertical rhythm. */
+   border-color: #c0c0c0;
+   border-top-width: 0.0625em;
+   border-top-style: solid;
+   padding-top: 0.4625em;
+   border-bottom-width: 0.0625em;
+   border-bottom-style: solid;
+   padding-bottom: 0.9125em;
+   border-left-width: 0.0625em;
+   border-left-style: solid;
+   padding-left: 0.875em;
+   border-right-width: 0.0625em;
+   border-right-style: solid;
+   padding-right: 0.875em;
+ }
+ 
+ /**
+  * 1. Correct `color` not being inherited in IE.
+  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+  * 3. Correct alignment displayed oddly in IE 6/7.
+  */
+ /* line 655, ../sass/variable/_normalize.scss */
+ legend {
+   border: 0;
+   /* 1 */
+   padding: 0;
+   /* 2 */
+   *margin-left: -7px;
+   /* 3 */
+ }
+ 
+ /**
+  * Remove default vertical scrollbar in IE.
+  */
+ /* line 669, ../sass/variable/_normalize.scss */
+ textarea {
+   overflow: auto;
+ }
+ 
+ /**
+  * Don't inherit the `font-weight` (applied by a rule above).
+  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+  */
+ /* line 678, ../sass/variable/_normalize.scss */
+ optgroup {
+   font-weight: bold;
+ }
+ 
+ /* Tables
+    ========================================================================== */
+ /**
+  * Remove most spacing between table cells.
+  */
+ /* line 689, ../sass/variable/_normalize.scss */
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+ }
+ 
+ /* line 694, ../sass/variable/_normalize.scss */
+ td,
+ th {
+   padding: 0;
+ }
+ 
+ /* line 6, ../sass/frontpage.scss */
+ html, body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ @media screen and (max-width: 1200px) {
+   /* line 14, ../sass/frontpage.scss */
+   #desktop {
+     display: none;
+   }
+ 
+   /* line 18, ../sass/frontpage.scss */
+   #mobile {
+     display: block;
+   }
+ }
+ @media screen and (min-width: 1201px) {
+   /* line 24, ../sass/frontpage.scss */
+   #desktop {
+     display: block;
+   }
+ 
+   /* line 28, ../sass/frontpage.scss */
+   #mobile {
+     display: none;
+   }
+ }
+ /* line 33, ../sass/frontpage.scss */
+ #desktop {
+   width: 100%;
+   height: 100%;
+ }
+ /* line 37, ../sass/frontpage.scss */
+ #desktop #pageContainer {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   display: grid;
+   grid-template-columns: repeat(6, 1fr);
+   grid-template-rows: repeat(16, 1fr);
+   grid-template-areas: "s h h h h h" "s h h h h h" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s m m m m m" "s b b b b b";
+ }
+ /* line 64, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV {
+   width: 100%;
+   height: 100%;
+   grid-area: s;
+   background-color: #706F73;
+ }
+ /* line 70, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items {
+   height: 50%;
+   top: 25%;
+   position: relative;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: repeat(5, 1fr);
+   grid-template-areas: "g" "s" "c" "s2" "l";
+ }
+ /* line 86, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #gallery .text, #desktop #pageContainer #sideNAV #items #space_one .text, #desktop #pageContainer #sideNAV #items #calendar .text, #desktop #pageContainer #sideNAV #items #space_two .text, #desktop #pageContainer #sideNAV #items #login .text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   font-size: 30px;
+   font-family: 'Raleway', sans-serif;
+   color: white;
+ }
+ /* line 95, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #gallery {
+   width: 90%;
+   margin: 0 auto;
+   height: 80%;
+   position: relative;
+   top: 10%;
+   grid-area: g;
+   display: table;
+   transition: all 200ms;
+ }
+
+ #desktop #pageContainer #sideNAV #items #gallery a {
+  color: white;
+  text-decoration: none;
+ }
+ /* line 108, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #gallery:hover {
+   background-color: white;
+ }
+ /* line 110, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #gallery:hover .text {
+   color: #706F73;
+   font-weight: bold;
+ }
+
+ #desktop #pageContainer #sideNAV #items #gallery:hover .text a{
+  color: #706F73;
+  font-weight: bold;
+}
+ /* line 117, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #space_one {
+   grid-area: s;
+   display: table;
+ }
+ /* line 125, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #calendar {
+   width: 90%;
+   margin: 0 auto;
+   height: 80%;
+   position: relative;
+   top: 10%;
+   grid-area: c;
+   display: table;
+   transition: all 200ms;
+ }
+
+ #desktop #pageContainer #sideNAV #items #calendar a{
+   text-decoration: none;
+   color: white;
+ }
+
+ /* line 140, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #calendar:hover {
+   background-color: white;
+ }
+ /* line 142, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #calendar:hover .text a{
+   color: #706F73;
+   font-weight: bold;
+ }
+ /* line 148, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #space_two {
+   grid-area: s2;
+   display: table;
+ }
+ /* line 156, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #login {
+   width: 90%;
+   margin: 0 auto;
+   height: 80%;
+   position: relative;
+   top: 10%;
+   grid-area: l;
+   display: table;
+   transition: all 200ms;
+ }
+
+ #desktop #pageContainer #sideNAV #items #login a{
+   text-decoration: none;
+   color: white;
+ }
+ /* line 170, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #login:hover {
+   background-color: white;
+ }
+ /* line 172, ../sass/frontpage.scss */
+ #desktop #pageContainer #sideNAV #items #login:hover .text a{
+   color: #706F73;
+   font-weight: bold;
+ }
+ /* line 181, ../sass/frontpage.scss */
+ #desktop #pageContainer #header {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   grid-area: h;
+ }
+ /* line 186, ../sass/frontpage.scss */
+ #desktop #pageContainer #header #textWrapper {
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 190, ../sass/frontpage.scss */
+ #desktop #pageContainer #header #textWrapper #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   font-size: 70px;
+   font-family: 'Raleway', sans-serif;
+ }
+ /* line 200, ../sass/frontpage.scss */
+ #desktop #pageContainer #content {
+   width: 100%;
+   height: 100%;
+   grid-area: m;
+ }
+ /* line 205, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper {
+   position: relative;
+   width: 95%;
+   margin: 0 auto;
+   height: 50%;
+   top: 25%;
+ }
+ /* line 214, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons {
+   height: 100%;
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(9, 1fr);
+   grid-template-rows: 100%;
+   grid-template-areas: "s1 c1 c1 c1 s2 c2 c2 c2 s3";
+ }
+ /* line 226, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #space_one {
+   grid-area: s1;
+ }
+ /* line 229, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #space_two {
+   grid-area: s2;
+ }
+ /* line 232, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #space_three {
+   grid-area: s3;
+ }
+ /* line 236, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer {
+   width: 100%;
+   height: 100%;
+   border: 1px solid #706F73;
+   border-radius: 3%;
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: repeat(5, 1fr);
+   grid-template-areas: "h" "h" "c1" "c2" "s";
+ }
+ /* line 254, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #textContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactOne #textContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactTwo #textContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #textContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactOne #textContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactTwo #textContainer, #mobile #contactSection #emailIconContainer #desktop #pageContainer #content #contactWrapper #contactIcons #textContainer, #mobile #contactSection #twitterIconContainer #desktop #pageContainer #content #contactWrapper #contactIcons #textContainer {
+   grid-area: h;
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 261, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #textContainer #text, #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactOne #textContainer #text, #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactTwo #textContainer #text, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #textContainer #text, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactOne #textContainer #text, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactTwo #textContainer #text, #mobile #contactSection #emailIconContainer #textContainer #desktop #pageContainer #content #contactWrapper #contactIcons #text, #mobile #contactSection #twitterIconContainer #textContainer #desktop #pageContainer #content #contactWrapper #contactIcons #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   font-size: 80px;
+   font-family: 'Raleway', sans-serif;
+ }
+ /* line 270, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer {
+   grid-area: c1;
+ }
+ /* line 280, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactOne {
+   grid-area: c1;
+ }
+ /* line 284, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactOne #textContainer #text {
+   font-size: 30px;
+ }
+ /* line 287, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactOne #textContainer #text a {
+   text-decoration: none;
+   color: black;
+ }
+ /* line 294, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactTwo {
+   grid-area: c2;
+ }
+ /* line 298, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactTwo #textContainer #text {
+   font-size: 30px;
+ }
+ /* line 301, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #contactTwo #textContainer #text a {
+   text-decoration: none;
+   color: black;
+ }
+ /* line 310, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer {
+   grid-area: c2;
+ }
+ /* line 321, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactOne {
+   grid-area: c1;
+ }
+ /* line 325, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactOne #textContainer #text {
+   font-size: 30px;
+ }
+ /* line 328, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactOne #textContainer #text a {
+   text-decoration: none;
+   color: black;
+ }
+ /* line 335, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactTwo {
+   grid-area: c2;
+ }
+ /* line 339, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactTwo #textContainer #text {
+   font-size: 30px;
+ }
+ /* line 342, ../sass/frontpage.scss */
+ #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #contactTwo #textContainer #text a {
+   text-decoration: none;
+   color: black;
+ }
+ /* line 353, ../sass/frontpage.scss */
+ #desktop #pageContainer #footer {
+   width: 100%;
+   height: 100%;
+   grid-area: b;
+ }
+ /* line 357, ../sass/frontpage.scss */
+ #desktop #pageContainer #footer #textWrapper {
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 361, ../sass/frontpage.scss */
+ #desktop #pageContainer #footer #textWrapper #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Raleway', sans-serif;
+ }
+ 
+ /* line 373, ../sass/frontpage.scss */
+ #mobile {
+   width: 100%;
+   height: 100%;
+ }
+ /* line 377, ../sass/frontpage.scss */
+ #mobile #header {
+   width: 100%;
+   height: 10%;
+   background-color: #706F73;
+   color: white;
+   font-weight: bold;
+ }
+ /* line 383, ../sass/frontpage.scss */
+ #mobile #header #textWrapper {
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 387, ../sass/frontpage.scss */
+ #mobile #header #textWrapper #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   font-size: 25px;
+   font-family: 'Raleway', sans-serif;
+ }
+ /* line 397, ../sass/frontpage.scss */
+ #mobile #menuWrapper {
+   width: 70%;
+   height: 250%;
+   margin: 0 auto;
+   margin-top: 5%;
+   padding: 5%;
+   display: grid;
+   border: 1px solid #706F73;
+   border-radius: 15px;
+   color: black;
+   grid-template-columns: 100%;
+   grid-template-rows: repeat(4, 1fr);
+   grid-template-areas: "h" "i1" "i2" "i3";
+ }
+ /* line 416, ../sass/frontpage.scss */
+ #mobile #menuWrapper #menuHeader {
+   grid-area: h;
+ }
+ /* line 418, ../sass/frontpage.scss */
+ #mobile #menuWrapper #menuHeader #textWrapper {
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 422, ../sass/frontpage.scss */
+ #mobile #menuWrapper #menuHeader #textWrapper #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+ }
+ /* line 432, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileGallery {
+   grid-area: i1;
+ }
+ /* line 434, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileGallery #textWrapper {
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 438, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileGallery #textWrapper #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: left;
+   font-size: 15px;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ #mobile #menuWrapper #mobileGallery #textWrapper #text a{
+   color: black;
+   text-decoration: none;
+ }
+ /* line 448, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileCalendar {
+   grid-area: i2;
+ }
+ /* line 450, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileCalendar #textWrapper {
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 454, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileCalendar #textWrapper #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: left;
+   font-size: 15px;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ #mobile #menuWrapper #mobileCalendar #textWrapper #text a{
+  color: black;
+  text-decoration: none;
+ }
+
+ /* line 464, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileLogIn {
+   grid-area: i3;
+ }
+ /* line 466, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileLogIn #textWrapper {
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 470, ../sass/frontpage.scss */
+ #mobile #menuWrapper #mobileLogIn #textWrapper #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: left;
+   font-size: 15px;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ #mobile #menuWrapper #mobileLogIn #textWrapper #text a{
+  color: black;
+  text-decoration: none;
+ }
+ /* line 481, ../sass/frontpage.scss */
+ #mobile #contactSection {
+   width: 80%;
+   margin: 0 auto;
+   margin-top: 15%;
+ }
+ /* line 485, ../sass/frontpage.scss */
+ #mobile #contactSection #contactHeader {
+   text-align: center;
+   color: black;
+   font-size: 25px;
+ }
+ /* line 492, ../sass/frontpage.scss */
+ #mobile #contactSection #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #mobile #contactSection #emailIconContainer, #mobile #contactSection #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #mobile #contactSection #twitterIconContainer, #mobile #contactSection #emailIconContainer, #mobile #contactSection #twitterIconContainer {
+   width: 100%;
+   height: 100%;
+   border: 1px solid #706F73;
+   border-radius: 15px;
+   display: grid;
+   margin-top: 5%;
+   grid-template-columns: 100%;
+   grid-template-rows: repeat(7, 1fr);
+   grid-template-areas: "h" "h" "h" "c1" "s" "c2" "s2";
+ }
+ /* line 512, ../sass/frontpage.scss */
+ #mobile #contactSection #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #textContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #mobile #contactSection #textContainer, #mobile #contactSection #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #textContainer, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #mobile #contactSection #textContainer, #mobile #contactSection #emailIconContainer #textContainer, #mobile #contactSection #emailIconContainer #contactOne #textContainer, #mobile #contactSection #emailIconContainer #contactTwo #textContainer, #mobile #contactSection #twitterIconContainer #textContainer, #mobile #contactSection #twitterIconContainer #contactOne #textContainer, #mobile #contactSection #twitterIconContainer #contactTwo #textContainer {
+   grid-area: h;
+   width: 100%;
+   height: 100%;
+   display: table;
+ }
+ /* line 519, ../sass/frontpage.scss */
+ #mobile #contactSection #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #textContainer #text, #desktop #pageContainer #content #contactWrapper #contactIcons #emailIconContainer #textContainer #mobile #contactSection #text, #mobile #contactSection #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #textContainer #text, #desktop #pageContainer #content #contactWrapper #contactIcons #twitterIconContainer #textContainer #mobile #contactSection #text, #mobile #contactSection #emailIconContainer #textContainer #text, #mobile #contactSection #emailIconContainer #contactOne #textContainer #text, #mobile #contactSection #emailIconContainer #contactTwo #textContainer #text, #mobile #contactSection #twitterIconContainer #textContainer #text, #mobile #contactSection #twitterIconContainer #contactOne #textContainer #text, #mobile #contactSection #twitterIconContainer #contactTwo #textContainer #text {
+   display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+   font-size: 40px;
+   font-family: 'Raleway', sans-serif;
+   color: black;
+ }
+ /* line 538, ../sass/frontpage.scss */
+ #mobile #contactSection #emailIconContainer #contactOne {
+   grid-area: c1;
+ }
+ /* line 542, ../sass/frontpage.scss */
+ #mobile #contactSection #emailIconContainer #contactOne #textContainer #text {
+   font-size: 20px;
+ }
+ /* line 545, ../sass/frontpage.scss */
+ #mobile #contactSection #emailIconContainer #contactOne #textContainer #text a {
+   text-decoration: none;
+   color: black;
+ }
+ /* line 552, ../sass/frontpage.scss */
+ #mobile #contactSection #emailIconContainer #contactTwo {
+   grid-area: c2;
+ }
+ /* line 556, ../sass/frontpage.scss */
+ #mobile #contactSection #emailIconContainer #contactTwo #textContainer #text {
+   font-size: 20px;
+ }
+ /* line 559, ../sass/frontpage.scss */
+ #mobile #contactSection #emailIconContainer #contactTwo #textContainer #text a {
+   text-decoration: none;
+   color: black;
+ }
+ /* line 569, ../sass/frontpage.scss */
+ #mobile #contactSection #twitterIconContainer {
+   grid-area: c2;
+   margin-bottom: 10%;
+ }
+ /* line 581, ../sass/frontpage.scss */
+ #mobile #contactSection #twitterIconContainer #contactOne {
+   grid-area: c1;
+ }
+ /* line 585, ../sass/frontpage.scss */
+ #mobile #contactSection #twitterIconContainer #contactOne #textContainer #text {
+   font-size: 20px;
+ }
+ /* line 588, ../sass/frontpage.scss */
+ #mobile #contactSection #twitterIconContainer #contactOne #textContainer #text a {
+   text-decoration: none;
+   color: black;
+ }
+ /* line 595, ../sass/frontpage.scss */
+ #mobile #contactSection #twitterIconContainer #contactTwo {
+   grid-area: c2;
+ }
+ /* line 600, ../sass/frontpage.scss */
+ #mobile #contactSection #twitterIconContainer #contactTwo #textContainer #text {
+   font-size: 20px;
+ }
+ /* line 603, ../sass/frontpage.scss */
+ #mobile #contactSection #twitterIconContainer #contactTwo #textContainer #text a {
+   text-decoration: none;
+   color: black;
+ }
+ 

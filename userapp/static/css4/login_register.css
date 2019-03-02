@@ -1,0 +1,27 @@
+#errorMSGContainer {
+  position: relative;
+  border: solid #B92200 1px;
+  margin: auto;
+  padding: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 20%;
+  bottom: -30%;
+}
+
+#errorMSGContainer #error{
+  text-align: center;
+  color: black;
+  z-index: 5;
+}
+
+#errorMSGContainer #errorBG{
+  z-index: 4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  background-color: #B92200;
+}

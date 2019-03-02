@@ -1,0 +1,137 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%static 'css3/index.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images2/text960.png' %}"/>
+    <script src="{%static 'js3/vue.js' %}"></script>
+</head>
+<body>
+
+    <div id="vue-app">
+        <div id="calendar">
+            <div id="top">
+                <div id="topGridWrapper">
+                    <div id="topWrapper">
+                        <div id="backArrow">
+                            <div @click="decreaseMonth()"><i class="fas fa-chevron-left"></i></div>
+                        </div>
+    
+                        <div id="middleSection">
+                            <%currentMonthS%>, <%currentYear%>
+                        </div>
+                        <div id="forwardArrow">
+                            <div @click="increaseMonth()"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+      
+            </div>
+
+            <div id="main">
+                <div id="eventsContainer">
+
+                    <!-- Itemgrid - jedes einzelne event -->
+                    <div class="itemGrid"  v-for="event in currentEvents" v-bind:id="event.title + '~' + event.hours + '~' + event.minutes + '~' + event.day + '~' + event.month + '~' + event.content">
+                        <div @click="showEditEventDialog($event)" class="itemTitle"><%event.title%></div>
+                        <div @click="showEditEventDialog($event)" class="itemDate"><%event.day%>. <%currentMonthS%> ⋅ <%event.hours%>:<%event.minutes%></div>
+                        <div @click="showEditEventDialog($event)" class="itemContent" v-html="event.content"></div>
+                        <div class="deleteItem">
+                            <div><i class="fas fa-times" @click="deleteEvent($event)"></i></div>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+            <div id="bot">
+                <div id="buttonWrapper">
+                    <button @click="showAddEventDialog()">Add event</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="create">
+        <div id="createBG" @click="maybeCancel($event)">
+            <div id="createMenuWrapper">
+                <div id="header">Add new event</div>
+                <div id="fieldWrapper">
+                    <div id="firstInputWrapper">
+                        <div id="titleTag">Title:</div>
+                        <div id="titleInput"><input type="text" name="" id="realTitle"></div>
+                    </div>
+                    <div id="secondInputWrapper">
+                        <div id="dateTagWrapper"><div id="dateTag">Date: (day, hour, minute)</div></div>
+                        <div id="inputsWrapper">
+                                <input type="text" placeholder="day" id="day">
+                                <input type="text" placeholder="hour (0-24)" id="hour">
+                                <input type="text" placeholder="minute (0-60)" id="min">
+                        </div>
+                    </div>
+                    <div id="thirdInputWrapper">
+                        <div id="contentTagWrapper"><div id="contentTag">Content:</div></div>
+                        <div id="contentArea">
+                            <textarea name="" id="content" ></textarea>
+                        </div>
+                    </div>
+                    <div id="buttonArea">
+                        <div id="button1">
+                            <button @click="addEvent()">Save</button>
+                        </div>
+                        <div id="button2">
+                            <button @click="cancelEventDialog()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="edit">
+        <div id="createBG" @click="maybeCancel($event)">
+            <div id="createMenuWrapper">
+                <div id="header">Edit event</div>
+                <div id="fieldWrapper">
+                    <div id="firstInputWrapper">
+                        <div id="titleTag">Title:</div>
+                        <div id="titleInput"><input type="text" name="" id="editRealTitle"></div>
+                    </div>
+                    <div id="secondInputWrapper">
+                        <div id="dateTagWrapper"><div id="dateTag">Date: (day, hour, minute)</div></div>
+                        <div id="inputsWrapper">
+                                <input type="text" placeholder="day" id="editDay">
+                                <input type="text" placeholder="hour (0-24)" id="editHour">
+                                <input type="text" placeholder="minute (0-60)" id="editMin">
+                        </div>
+                    </div>
+                    <div id="thirdInputWrapper">
+                        <div id="contentTagWrapper"><div id="contentTag">Content:</div></div>
+                        <div id="contentArea">
+                            <textarea name="" id="editContent" ></textarea>
+                        </div>
+                    </div>
+                    <div id="buttonArea">
+                        <div id="button1">
+                            <button @click="editEvent()">Edit</button>
+                        </div>
+                        <div id="button2">
+                            <button @click="cancelEventDialog()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="{%static 'js3/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import "compass/css3";
+.headline {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    background: #333;
+    color: #14d1b2;
+    margin: 0;
+    padding: 35px 0px;
+}
+
+.headline a{
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 5%;
+}
+
+
+.headlineTwo{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+  padding: 35px 0px;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+
+.sliderContainer{
+  display: block;
+  width: 100%;
+}
+
+/* $activeColor: #c0392b; //red */
+/* $background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/13460/dark_wall.png'); */
+/* .slideOne */
+.slideOne {
+  width: 50px;
+  height: 22px;
+  background: rgb(14, 161, 38);
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  transition: all 250ms;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slideOne label {
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  cursor: pointer;
+  background: #fcfff4;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+.slideOne input[type=checkbox] {
+  visibility: hidden;
+}
+.slideOne input[type=checkbox]:checked + label {
+  left: 29px;
+}
+/*rgb(182, 37, 11);*/
+.slideTwo {
+  width: 50px;
+  height: 22px;
+  background: rgb(14, 161, 38);
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slideTwo label {
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  cursor: pointer;
+  background: #fcfff4;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+.slideTwo input[type=checkbox] {
+  visibility: hidden;
+}
+.slideTwo input[type=checkbox]:checked + label {
+  left: 29px;
+}
+/*rgb(14, 161, 38);*/
+.slideThree {
+  width: 50px;
+  height: 22px;
+  background: rgb(14, 161, 38);
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slideThree label {
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  cursor: pointer;
+  background: #fcfff4;
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+.slideThree input[type=checkbox] {
+  visibility: hidden;
+}
+.slideThree input[type=checkbox]:checked + label {
+  left: 29px;
+}
+
+.slideFour {
+  width: 50px;
+  height: 22px;
+  background: rgb(14, 161, 38);
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slideFour label {
+  display: block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  cursor: pointer;
+  background: #fcfff4;
+  /*background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);*/
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+.slideFour input[type=checkbox] {
+  visibility: hidden;
+}
+.slideFour input[type=checkbox]:checked + label {
+  left: 29px;
+}
+
+
+.sliderContainer{
+  width: 40%;
+  margin: auto;
+}
+.mainTable{
+  margin: auto;
+}
+
+.space{
+  width: 50px;
+}
